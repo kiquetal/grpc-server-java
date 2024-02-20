@@ -37,7 +37,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN
+          password: ${{ secrets.GITHUB_TOKEN  }}
       - name: Obtain the repository name
         id: get_repo_name
         run:  echo "REPOSITORY_NAME=$(echo ${{ github.repository }} | cut -d '/' -f 2)" >> $GITHUB_OUTPUT
